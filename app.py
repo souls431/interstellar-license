@@ -159,7 +159,10 @@ def activate(req: ActivateRequest, db=Depends(get_db)):
         raise HTTPException(403, "Key expired")
 
     if lic.hwid and lic.hwid != hwid:
-        raise HTTPException(403, "HWID mismatch — key already bound to another machine. Request reset.")
+        raise HTTPException(
+            403,
+            "HWID mismatch — key is locked to another device. Admin must RESET HWID before this key can be used here."
+        )
 
     # Bind
     if not lic.hwid:
