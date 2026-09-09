@@ -4,7 +4,7 @@ Run this as a free cron-job.org / UptimeRobot target,
 or as a separate always-on process.
 
 Usage:
-  python keepalive.py https://interstellar-modz-server.onrender.com
+  python keepalive.py https://interstellar-license.onrender.com
 """
 import sys
 import time
