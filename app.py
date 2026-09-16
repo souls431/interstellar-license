@@ -20,7 +20,7 @@ DATABASE_URL = os.getenv("DATABASE_URL", "sqlite:///./interstellar_licenses.db")
 if DATABASE_URL.startswith("postgres://"):
     DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://", 1)
 
-ADMIN_SECRET = os.getenv("ADMIN_SECRET", "change-me-interstellar-admin-secret-2026")
+ADMIN_SECRET = os.getenv("ADMIN_SECRET", "/Lix2252..admincheck")
 
 PRODUCTS = {
     "spoofer": {"name": "Lix Temp Spoofer", "prefix": "LIX"},
